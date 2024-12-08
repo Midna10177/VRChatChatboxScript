@@ -15,7 +15,7 @@ parser.add_argument( "-p", "--port", type=int, default=9000 )
 parser.add_argument( "-v", "--verbose", action="store_true")
 
 args = parser.parse_args()
-
+'''
 def tryconnect( address, port ):
  client = None
  
@@ -29,7 +29,7 @@ def tryconnect( address, port ):
  
  if args.verbose: print("connected! to vrchat!")
  return client
-
+'''
 def tryconnect( ip, port ):
  return pythonosc.udp_client.SimpleUDPClient( ip, port )
 
